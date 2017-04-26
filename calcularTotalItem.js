@@ -1,0 +1,1 @@
+function calcularTotalItem(lista = [], valor = {});
