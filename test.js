@@ -3,7 +3,7 @@ const lab = exports.lab = lab.script();
 
 const { expect } = require('code');
 
-const { calcularTotalItem } = require.('./index.js');
+const { calcularTotalItem } = require('./index.js');
 
 lab.experiment('Quando não informa parâmetros', () => {
   lab.test('Deve resultado vazio', (done) => {
