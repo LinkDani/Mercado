@@ -3,7 +3,7 @@ const lab = exports.lab = lab.script();
 
 const { expect } = require('code');
 
-const { calcularTotalItem } = require.('./calc');
+const { calcularTotalItem } = require.('./index.js');
 
 lab.experiment('Quando não informa parâmetros', () => {
   lab.test('Deve resultado vazio', (done) => {
@@ -14,9 +14,9 @@ lab.experiment('Quando não informa parâmetros', () => {
 
 //Implementação dos nomes do produto
 lab.experiment('quando informa ID', () => {
-lab.test('deve retornar com o valor do produto ', (done) => {
+lab.test('deve retornar com o nome e o valor do produto ', (done) => {
     const lista = ['Maçã', 'Banana', 'Limão', 'Abacaxi'];
-    const retorno = { resultado:[{produto: 'Maçã', valor: 18}, {produto: 'Banana', valor: 20}, {produto: 'Limão', valor: 22}, {produto: 'Abacaxi', valor: 24}]};
+    const retorno = { resultado:[{Id: 1,produto: 'Maçã', valor unitário: 4}, {Id: 2, produto: 'Banana', valor unitário: 3}, {Id: 3, produto: 'Limão', valor unitário: 5}, {Id: 6, produto: 'Abacaxi', valor unitário: 10}]};
     expect(calcularTotalItem(lista)).to.equal(retorno);
     done();
   });
