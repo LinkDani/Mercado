@@ -10,8 +10,8 @@
 6 silly lifecycle calculartotalitem@1.0.0~pretest: no script for pretest, continuing
 7 info lifecycle calculartotalitem@1.0.0~test: calculartotalitem@1.0.0
 8 verbose lifecycle calculartotalitem@1.0.0~test: unsafe-perm in lifecycle true
-9 verbose lifecycle calculartotalitem@1.0.0~test: PATH: /home/ubuntu/.nvm/versions/node/v7.7.4/lib/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/Javascript/CalcularTotalItem/node_modules/.bin:/home/ubuntu/.nvm/versions/node/v7.7.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle calculartotalitem@1.0.0~test: CWD: /home/ubuntu/Javascript/CalcularTotalItem
+9 verbose lifecycle calculartotalitem@1.0.0~test: PATH: /home/ubuntu/.nvm/versions/node/v7.7.4/lib/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/Javascript/calculaTotalItem/node_modules/.bin:/home/ubuntu/.nvm/versions/node/v7.7.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle calculartotalitem@1.0.0~test: CWD: /home/ubuntu/Javascript/calculaTotalItem
 11 silly lifecycle calculartotalitem@1.0.0~test: Args: [ '-c', 'echo "Error: no test specified" && exit 1' ]
 12 silly lifecycle calculartotalitem@1.0.0~test: Returned: code: 1  signal: null
 13 info lifecycle calculartotalitem@1.0.0~test: Failed to exec test script
@@ -26,7 +26,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:899:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid calculartotalitem@1.0.0
-16 verbose cwd /home/ubuntu/Javascript/CalcularTotalItem
+16 verbose cwd /home/ubuntu/Javascript/calculaTotalItem
 17 error Linux 4.2.0-34-generic
 18 error argv "/home/ubuntu/.nvm/versions/node/v7.7.4/bin/node" "/home/ubuntu/.nvm/versions/node/v7.7.4/bin/npm" "run" "test"
 19 error node v7.7.4
