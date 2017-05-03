@@ -20,7 +20,7 @@ lab.experiment('quando não-informa ID', () => {
 });
 
 lab.experiment('quando informa opção para exibir atributos de valorUnitário e produto', () => {
-  lab.test('deve retornar com o vencedor', (done) => {
+  lab.test('deve retornar com o id,nome e valorUnitário', (done) => {
      const opcoes = ['Maçã', 'Banana', 'Açai'];
      const retorno = { resultado: [
        {id: 1, valorUnitário: 10}
