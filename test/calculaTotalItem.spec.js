@@ -3,18 +3,10 @@ const lab = exports.lab = Lab.script();
 
 const { expect } = require('code');
 
-const { calculaTotalItem, buscaProduto } = require('../calculaTotalItem');
- //testando somente um valorUnitário
+const { calculaTotalItem } = require('../calculaTotalItem');
 lab.experiment('quando informa ID', () => {
   lab.test('deve retornar com o nome e o valor do produto ', (done) => {
-    expect(buscaProduto(1)).to.equal({ id: 1, Nome: 'Maçã', valorUnitário: 50 });
-    done();
-  });
-});
-
-lab.experiment('quando não-informa ID', () => {
-  lab.test.skip('deve retornar com: valor não econtrado ', (done) => {
-    expect(buscaProduto(7)).to.equal('Produto não encontrado');
+    expect(calculaTotalItem(1,4)).to.equal({ produto: 'Maçã', valor: 40 });
     done();
   });
 });

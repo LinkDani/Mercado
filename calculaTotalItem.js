@@ -4,16 +4,18 @@ const listaProdutos = [
      {id: 3, nome: 'Açai', valorUnitário: 6}
 ];
 
-const buscaProduto = function(codigo) {
-  // listaProdutos.find ....
-
-  return { id: 1, Nome: 'Maçã', valorUnitário: 50 }
-}
-
 const calculaTotalItem = function(codigo, quantidade) {
-  const p = buscaProduto(codigo);
+  let produtoEncontrado;
 
-  return { produto: 'Maça', valor: 18}
+  for(var i = 0; i <= listaProdutos.length-1; i++){
+    if (listaProdutos[i].id == codigo) {
+      produtoEncontrado = listaProdutos[i];
+    }
+  }
+  const nomeProduto = produtoEncontrado.nome;
+  const total = produtoEncontrado.valorUnitário * quantidade;
+
+  return { produto: nomeProduto, valor: total}
 }
 
-module.exports = { buscaProduto, calculaTotalItem }
+module.exports = { calculaTotalItem }
