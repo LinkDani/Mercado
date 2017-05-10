@@ -13,3 +13,12 @@ lab.experiment('quando informa ID', () => {
     done();
   });
 });
+lab.experiment('quando informa ID', () => {
+  lab.test('deve retornar o recibo de compra:', (done) => {
+    expect(calculaTotalItem(1,4,5)).to.equal({ produto: 'Maçã', valor: 35 });
+    expect(calculaTotalItem(2,200,100)).to.equal({ produto: 'Banana', valor: 700 });
+    expect(calculaTotalItem(3,20,10)).to.equal({ produto: 'Açai', valor: 110});
+    expect(calculaTotalItem(4,50,30)).to.equal({ produto: 'Café', valor: 2470});
+    done();
+  });
+});

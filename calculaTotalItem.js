@@ -5,19 +5,19 @@ const listaProdutos = [
      {id: 4, nome: 'Café', valorUnitário: 50}
 ];
 
-const calculaTotalItem = function(codigo, quantidade) {
+const calculaTotalItem = function(codigo, quantidade, desconto) {
   let produtoEncontrado;
 
   for(var i = 0; i <= listaProdutos.length-1; i++){
     if (listaProdutos[i].id == codigo) {
       produtoEncontrado = listaProdutos[i];
-
     }
   }
   const nomeProduto = produtoEncontrado.nome;
   const total = produtoEncontrado.valorUnitário * quantidade;
-  console.log({ produto: nomeProduto, valor: total });
-  return { produto: nomeProduto, valor: total}
+  const totalComDesconto = total - (desconto||0);
+  console.log({ produto: nomeProduto, valor: totalComDesconto });
+  return { produto: nomeProduto, valor: totalComDesconto}
 }
 
 module.exports = { calculaTotalItem }
