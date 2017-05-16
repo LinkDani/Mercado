@@ -16,6 +16,13 @@ const calculaTotalItem = function(codigo, quantidade, desconto) {
   const nomeProduto = produtoEncontrado.nome;
   const total = produtoEncontrado.valorUnitário * quantidade;
   const totalComDesconto = total - (desconto||0);
+  if(desconto > totalComDesconto){
+
+      const totalComDesconto = 0;
+
+    console.log({ produto: nomeProduto, valor: totalComDesconto });
+    return { produto: nomeProduto, valor: totalComDesconto}
+  }
   console.log({ produto: nomeProduto, valor: totalComDesconto });
   return { produto: nomeProduto, valor: totalComDesconto}
 }
