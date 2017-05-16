@@ -22,3 +22,12 @@ lab.experiment('quando informa ID', () => {
     done();
   });
 });
+lab.experiment('quando informa ID', () => {
+  lab.test('deve retornar o recibo de compra com o desconto desnecessário:', (done) => {
+    expect(calculaTotalItem(1,4,50)).to.equal({ produto: 'Maçã', valor: 0 });
+    expect(calculaTotalItem(2,200,801)).to.equal({ produto: 'Banana', valor: 0 });
+    expect(calculaTotalItem(3,20,10)).to.equal({ produto: 'Açai', valor: 110});
+    expect(calculaTotalItem(4,50,30)).to.equal({ produto: 'Café', valor: 2470});
+    done();
+  });
+});
