@@ -6,7 +6,7 @@
   "scripts": {
     "test": "lab -v"
   },
-  "author": "",
+  "author": "dr",
   "license": "ISC",
   "dependencies": {
     "code": "^4.0.0",
