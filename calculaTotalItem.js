@@ -1,8 +1,8 @@
 const listaProdutos = [
-     {id: 1, nome: 'Maçã', valorUnitário: 10},
-     {id: 2, nome: 'Banana', valorUnitário: 4},
-     {id: 3, nome: 'Açai', valorUnitário: 6},
-     {id: 4, nome: 'Café', valorUnitário: 50}
+     {id: 1, nome: 'Maçã da fruteira da avenida', valorUnitário: 10},
+     {id: 2, nome: 'Banana verde do kiosque', valorUnitário: 4},
+     {id: 3, nome: 'Açai artificial', valorUnitário: 6},
+     {id: 4, nome: 'Café do mercado público', valorUnitário: 50}
 ];
 
 const calculaTotalItem = function(codigo, quantidade, desconto) {
